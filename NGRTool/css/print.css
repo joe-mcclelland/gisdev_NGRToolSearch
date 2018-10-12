@@ -1,0 +1,7 @@
+﻿html,body{padding:0;margin:0;height:100%; font-family:arial, sans-serif; font-size: 0.9em;  }
+.esriSimpleSlider{display:none;}
+.container{width:660px;height:600px;}
+.left { padding:0;margin:0;height:400px;width:500px;position: relative;margin-right: 10px; border-bottom: solid 1px #C0D2D2;}
+.right {float: right; position: relative; text-align: left;width: 150px; margin-top: 5px;}
+.copyrighttext  { background-color:#097EC1;font-weight:bold;font-size:80%; color:#ffffff; opacity:0.7; filter:alpha(opacity=70);  width:100%;  position: absolute;  bottom: 0px;  left: 0px;  z-index: 1;   padding: 2px; }
+.loadingImg{position:absolute; left:50%; bottom:100px; z-index:1005;height:75px;border-radius: 5px;padding: 0px;box-shadow:0 0 0.35em #777777;}   

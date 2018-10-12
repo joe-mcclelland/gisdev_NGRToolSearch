@@ -1,0 +1,37 @@
+/* cookie box at top */
+#CookieWrapper{
+	width:100%;
+	background-color: #181818;
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/surveybox/grad.jpg);
+	background-repeat:repeat-x;
+	display:none;
+	z-index:1001;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#CookieInternal {
+	padding:10px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+}
+#CookieInternal P{
+	margin:0px;
+	padding:0px;
+	color:#FFF;
+	font-size:1em;
+}
+#CookieWrapperClose{
+	font-size:0.833em;
+	line-height:1em;
+	text-align:right;
+	margin:0px;
+	padding:0px;
+}
