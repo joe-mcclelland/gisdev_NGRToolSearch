@@ -34,9 +34,9 @@ function bannerSearch() {
             document.getElementById("txtsearch").value = "Not a valid search term."
         } else {
             SEPA.GIS.point.ngr.prototype.REGEX = /^(NA|NF|NL|NB|NG|NM|NR|NW|NC|NH|NN|NS|NX|ND|NJ|NO|NT|NY|NK|HW|HX|HY|HT|HP|HU|HZ)([0-9]{2}|[0-9]{4}|[0-9]{6}|[0-9]{8}|[0-9]{10})$/
-            if (searchTerm.replace(' ', '').match(SEPA.GIS.point.ngr.prototype.REGEX)) {
+            if (searchTerm.replace(/\s/g, '').match(SEPA.GIS.point.ngr.prototype.REGEX)) {
                 // NGR Entered, zoom to it and display point
-                var searchNGR = new SEPA.GIS.point.ngr(searchTerm.replace(' ', ''));
+                var searchNGR = new SEPA.GIS.point.ngr(searchTerm.replace(/\s/g, ''));
                 var searchXY = searchNGR.getXY();
                 iMap.zoomTo(searchXY.xcoord, searchXY.ycoord, {
                     drawZoom: true
