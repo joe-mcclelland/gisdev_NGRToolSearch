@@ -39,7 +39,8 @@ function bannerSearch() {
                 var searchNGR = new SEPA.GIS.point.ngr(searchTerm.replace(/\s/g, ''));
                 var searchXY = searchNGR.getXY();
                 iMap.zoomTo(searchXY.xcoord, searchXY.ycoord, {
-                    drawZoom: true
+                    drawZoom: true,
+					zoomBuffer: 100
                 });
 				setTimeout(function () {
                     mapLayer = map.getLayer('resultGraphics');
